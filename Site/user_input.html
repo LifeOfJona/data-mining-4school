@@ -1,29 +1,65 @@
+<!DOCTYPE html>
 <html>
+
+<head>
+	<title>CP465 Term Project</title>
+	<style>
+		body {
+			background-color: white;
+			text-align: center;
+			color: black;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+	</style>
+</head>
+
 <body>
-<form action="TP_Site.php" method="post">
 
-<table border="0">
+	<h1>CP465 Term Project</h1>
 
-<tr>
-	<td>Name</td>
-	<td align="center"><input type="text" name="username" size="30" /></td>
-</tr>
+	<p> Implemented By: Yahya, Jona, Akhil, Kashif, Hamoudi, Muzzammil, Razza
 
-<tr>
-	<td>Address</td>
-	<td align="center"><input type="text" name="streetaddress" size="30" /></td>2
-</tr>
+		<p>Implemented the following Algorithms: <br />
+			<strong>1</strong>.The C4.5 Algorithm, based on information gainratio, to build decisiontrees. <br />
+			<strong>2</strong>.The Apriori algorithm formining association rules. <br />
+			<strong>3</strong>.The k-Means clustering algorithm.</p> <br />
+		<p>To run each <strong>Algorithm</strong>, please click on the buttons below.</p> <br />
+		<!-- Images to represent each algorithm.-->
+		<img src="c45.gif" alt="Avatar" style="width:200px">
+		<img src="apriori.png" alt="Avatar" style="width:300px">
+		<img src="kmeans.png" alt="Avatar" style="width:200px">
+		<!-- Implement Buttons + Link them together-->
+		<div id="wrapper">
+			<div id="banner">
 
-<tr>
-	<td>City</td>
-	<td align="center"><input type="text" name="cityaddress" size="30"  /></td>
-</tr>
+			</div>
+			
+			<nav id="navigation">
+				<ul id="nav">
+					<li><a href="TP_Site.php">c45 Algorithm</a></li>
+					<li><a href="#">Apriori Algorithm</a></li>
+					<li><a href="#">K-Means Algortihm</a></li>
 
-<tr>
-<td colspan="2" align="center"><input type="submit" value="Submit"/></td>
-</tr>
+				</ul>
 
-</table>
-</form>
+			</nav>
+
+			<div id="content_area">
+				<?php echo $content; ?>
+			</div>
+
+			<div id="sidebar">
+
+			</div>
+
+		<footer>
+			<p>All Rights Reserved © </p>
+		</footer>
+
+		</div>
+
+
+
 </body>
+
 </html>
